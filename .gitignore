@@ -16,6 +16,8 @@ coverage
 
 package-lock.json
 
+.vscode/extensions.json
+
 /cypress/videos/
 /cypress/screenshots/
 
