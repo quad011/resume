@@ -10,6 +10,12 @@ const props = defineProps({
   videoUrl: {
     type: String,
   },
+  projectUrl: {
+    type: String,
+  },
+  techStack: {
+    type: String,
+  },
 });
 const openPopup = ref(false);
 
@@ -32,7 +38,7 @@ const playing = ref(false);
       :controls="false"
       :muted="true"
       :loop="true"
-      class="h-full aspect-[2.14]"
+      class="h-full"
     />
     <h3 v-if="title" v-html="title" class="text-18 lg:text-24 mt-2 lg:mt-3" />
   </div>
@@ -49,7 +55,12 @@ const playing = ref(false);
       class="overflow-auto"
     >
       <Lightbox v-if="openPopup" @close="openPopup = false">
-        <Popup :title="title" :videoUrl="videoUrl" />
+        <Popup
+          :title="title"
+          :videoUrl="videoUrl"
+          :projectUrl="projectUrl"
+          :techStack="techStack"
+        />
       </Lightbox>
     </TransitionGsap>
   </teleport>

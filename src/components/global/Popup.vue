@@ -1,6 +1,6 @@
 <script setup>
 import { useScrollLock } from "@vueuse/core";
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 const props = defineProps({
   title: {
     type: String,
@@ -9,6 +9,12 @@ const props = defineProps({
     type: String,
   },
   videoUrl: {
+    type: String,
+  },
+  projectUrl: {
+    type: String,
+  },
+  techStack: {
     type: String,
   },
 });
@@ -22,9 +28,15 @@ onMounted(() => {
 
 <template>
   <div
-    class="popup fixed left-0 top-0 w-full h-full flex flex-wrap px-16 py-20"
+    class="popup fixed left-0 top-0 w-full h-full flex flex-wrap px-4 sm:px-16 py-20"
   >
-    <div class="w-1/2 pr-20">
+    <h3
+      v-if="title"
+      v-html="title"
+      class="text-40 md:text-80 font-bold block lg:hidden"
+    />
+
+    <div class="flex lg:w-2/3 lg:pr-20 my-3">
       <HtmlVideo
         v-if="videoUrl"
         :src="videoUrl"
@@ -37,9 +49,24 @@ onMounted(() => {
       />
     </div>
 
-    <div class="w-1/2 flex flex-col justify-between relative z-50">
-      <h3 v-if="title" v-html="title" class="text-80 font-bold" />
-      <h3 v-if="title" v-html="title" class="text-80 font-bold" />
+    <div class="lg:w-1/3 flex flex-col justify-between relative z-50">
+      <h3
+        v-if="title"
+        v-html="title"
+        class="text-80 font-bold hidden lg:block"
+      />
+      <h4
+        v-html="`Tech Stach: ${techStack}`"
+        class="text-18 lg:text-24 font-bold"
+      ></h4>
+      <div class="mt-3">
+        <a
+          target="_blank"
+          :href="projectUrl"
+          class="font-bold text-18 lg:text-40 link reversed"
+          >Link</a
+        >
+      </div>
     </div>
   </div>
 </template>

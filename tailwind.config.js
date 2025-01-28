@@ -33,7 +33,7 @@ export default {
  
        fontSize: {
          base: [
-           "clamp(16px, 1rem, 22px)",
+           "clamp(14px, 1rem, 22px)",
            {
              lineHeight: "1.2"
            }

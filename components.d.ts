@@ -8,10 +8,13 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ArrowTop: typeof import('./src/components/icons/ArrowTop.vue')['default']
+    FullscreenMenu: typeof import('./src/components/global/FullscreenMenu.vue')['default']
+    Hamburger: typeof import('./src/components/global/Hamburger.vue')['default']
     HtmlVideo: typeof import('./src/components/cvele-components/html-video/index.vue')['default']
     Lightbox: typeof import('./src/components/cvele-components/Lightbox.vue')['default']
     Marquee: typeof import('./src/components/cvele-components/Marquee.vue')['default']
     MarqueeWrapper: typeof import('./src/components/MarqueeWrapper/index.vue')['default']
+    Nav: typeof import('./src/components/global/Nav.vue')['default']
     PageFooter: typeof import('./src/components/global/PageFooter.vue')['default']
     PageHeader: typeof import('./src/components/cvele-components/PageHeader.vue')['default']
     Parallax: typeof import('./src/components/cvele-components/parallax/index.vue')['default']

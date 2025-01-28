@@ -4,8 +4,13 @@ import { RouterLink, RouterView } from "vue-router";
 
 const showEl = ref(false);
 
+let isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+
 const onScroll = () => {
-  // console.log("Window scrollY:", window);
   showEl.value = window.scrollY > 100;
   return {
     showEl,
@@ -40,40 +45,50 @@ function scrollToTop() {
 
 <template>
   <header
-    class="flex px-4 lg:px-16 py-4 lg:py-10 justify-between fixed top-0 left-0 w-full z-10 text-white mix-blend-difference"
+    class="px-4 lg:px-16 py-4 lg:py-10 fixed top-0 left-0 w-full flex justify-between text-white mix-blend-difference z-[100]"
   >
     <!-- LOGO -->
     <div @click.native="scrollToTop" class="cursor-pointer">
       <img
         alt="logo"
-        class="logo w-[5vw] object-contain"
+        class="logo w-[10vw] lg:w-[5vw] object-contain"
         src="/assets/svg/logo.svg"
       />
     </div>
     <!-- END :: LOGO -->
 
     <!-- NAV -->
-    <div class="wrapper">
-      <nav class="text-base">
-        <div
-          @click.native="scrollToTop"
-          class="mr-5 text-14 lg:text-base link reversed cursor-pointer"
-        >
-          Home
-        </div>
-        <RouterLink to="#about" class="mr-5 text-14 lg:text-base link reversed"
-          >Projects</RouterLink
-        >
-        <RouterLink
-          to="/"
-          class="text-14 lg:text-base link reversed"
-          @click="goTo('work')"
-          >Experience</RouterLink
-        >
-      </nav>
+    <div class="wrapper hidden lg:block">
+      <Nav />
     </div>
     <!-- END ::  NAV -->
+
+    <!-- FS MENU -->
+    <div class="block lg:hidden">
+      <Hamburger @click="toggleMenu" :isMenuOpen="isMenuOpen" />
+    </div>
+    <!-- END :: FS MENU -->
+
+    <teleport to="body">
+      <TransitionGsap
+        :leave_to="{ scale: 0.9, opacity: 0, duration: 0.4 }"
+        :from="{ opacity: 0 }"
+        :to="{
+          opacity: 1,
+          duration: 0.4,
+          ease: 'Power1.easeOut',
+        }"
+        class="overflow-auto"
+      >
+        <FullscreenMenu
+          v-if="isMenuOpen"
+          :isMenuOpen="isMenuOpen"
+          class="block lg:hidden"
+        />
+      </TransitionGsap>
+    </teleport>
   </header>
+
   <div
     class="fixed right-3 lg:right-5 bottom-16 lg:bottom-5 z-10 bg-white rounded-full transition-opacity duration-500 cursor-pointer mix-blend-difference"
     @click.native="scrollToTop"

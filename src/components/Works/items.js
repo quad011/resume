@@ -8,27 +8,37 @@ export default {
             0: {
                 title: 'Boba Ice Cream',
                 text: 'lorem ipsum',
-                videoUrl: new URL('/assets/work-videos/boba-icecream.mp4', import.meta.url).href
+                videoUrl: new URL('/assets/work-videos/boba-icecream.mp4', import.meta.url).href,
+                techStack: 'JavaScript, Vue.js, Nuxt,js, GSAP, HTML, CSS, Tailwind',
+                projectUrl: 'https://www.bobaicecream.com/'
             },
             1: {
                 title: 'DesignDept',
                 text: 'lorem ipsum',
-                videoUrl: new URL('/assets/work-videos/design-dept.mp4', import.meta.url).href
+                videoUrl: new URL('/assets/work-videos/design-dept.mp4', import.meta.url).href,
+                techStack: 'JavaScript, Vue.js, Nuxt,js, GSAP, HTML, CSS, Tailwind',
+                projectUrl: ''
             },
             2: {
                 title: 'Helloplayful',
                 text: 'lorem ipsum',
-                videoUrl: new URL('/assets/work-videos/helloplayful.mp4', import.meta.url).href
+                videoUrl: new URL('/assets/work-videos/helloplayful.mp4', import.meta.url).href,
+                techStack: 'JavaScript, Vue.js, Nuxt,js, GSAP, HTML, CSS, Tailwind',
+                projectUrl: ''
             },
             3: {
                 title: 'WoodInt',
                 text: 'lorem ipsum',
-                videoUrl: new URL('/assets/work-videos/wood.mp4', import.meta.url).href
+                videoUrl: new URL('/assets/work-videos/wood.mp4', import.meta.url).href,
+                techStack: 'JavaScript, Vue.js, Nuxt,js, GSAP, HTML, CSS, Tailwind',
+                projectUrl: ''
             },
             4: {
                 title: 'Shapes And Forms',
                 text: 'lorem ipsum',
-                videoUrl: new URL('/assets/work-videos/shapes.mp4', import.meta.url).href
+                videoUrl: new URL('/assets/work-videos/shapes.mp4', import.meta.url).href,
+                techStack: 'JavaScript, Vue.js, Nuxt,js, GSAP, HTML, CSS, Tailwind',
+                projectUrl: ''
             }
         }
     }

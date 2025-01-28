@@ -18,16 +18,27 @@ itemsArray.splice(1, 0, { type: "text", content: items.data.content });
       <div
         v-for="(item, index) in itemsArray"
         :key="index"
-        class="px-4 w-ull lg:w-1/3 mb-20"
+        class="px-4 w-full sm:w-1/2 xl:w-1/3 mb-10 lg:mb-20 h-full flex flex-col"
       >
-        <WorkBox :title="item.title" :videoUrl="item.videoUrl" />
+        <WorkBox
+          :title="item.title"
+          :videoUrl="item.videoUrl"
+          :projectUrl="item.projectUrl"
+          :techStack="item.techStack"
+        />
 
-        <div v-if="item.content" class="h-full flex flex-col justify-between">
+        <div
+          v-if="item.content"
+          class="h-full flex flex-col justify-between flex"
+        >
           <h2
             v-html="item?.content?.title"
-            class="text-24 lg:text-32 uppercase mb-5 lg:mb-0"
+            class="text-24 lg:text-32 uppercase mb-5 sm:mb-3 lg:mb-0"
           />
-          <p v-html="item?.content?.text" class="text-16 lg:text-base" />
+          <p
+            v-html="item?.content?.text"
+            class="text-16 sm:text-14 xl:text-base"
+          />
         </div>
       </div>
     </div>

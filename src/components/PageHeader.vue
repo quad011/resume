@@ -12,12 +12,12 @@ const props = defineProps({
 <template>
   <div
     ref="header"
-    class="page-header h-[50vw] max-h-screen flex items-end relative overflow-hidden"
+    class="page-header h-[56vw] max-h-screen flex items-end relative overflow-hidden"
   >
     <!-- <parallax> -->
     <h1
       v-html="title"
-      class="text-black text-[10.5vw] whitespace-nowrap font-bold uppercase relative left-[-.7vw]"
+      class="text-black text-[10.5vw] whitespace-nowrap font-bold uppercase relative left-[-.7vw] leading-[.9]"
     ></h1>
     <!-- </parallax> -->
     <!-- <parallax :factor="0.5">
