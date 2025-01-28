@@ -18,7 +18,7 @@ const playing = ref(false);
 
 <template>
   <div
-    class="work-box"
+    class="work-box cursor-pointer"
     @click.native="openPopup = true"
     @mouseenter="playing = true"
     @mouseleave="playing = false"
