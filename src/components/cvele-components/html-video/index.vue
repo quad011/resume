@@ -3,11 +3,6 @@ import { ref, watch } from "vue";
 import _props from "./props";
 const props = defineProps(_props);
 
-const isLoaded = ref(false);
-const handleLoad = () => {
-  isLoaded.value = true;
-};
-
 const video = ref(null);
 let videoPoster = ref("");
 
@@ -90,7 +85,7 @@ watch(
 
 <template>
   <video
-    class="html-video relative"
+    class="html-video"
     ref="video"
     @click="onClick"
     @canplaythrough="onCanPlay"
@@ -98,23 +93,15 @@ watch(
     @seeking="onSeeking"
     @timeupdate="onTimeupdate"
     @play="onPlay"
-    :preload="preload || 'metadata'"
+    :preload="preload"
     :playsinline="playsinline"
     :autoplay="autoplay"
     :poster="videoPoster"
     :muted="muted"
     :loop="loop"
     :controls="controls"
-    :class="{ 'image-loaded': isLoaded }"
-    @load="handleLoad"
   >
     <source :src="src" type="video/mp4" />
-    <div
-      v-if="true"
-      class="placeholder absolute left-0 top-0 w-full h-full flex items-center justify-center bg-white"
-    >
-      <Spinner />
-    </div>
   </video>
 </template>
 

@@ -12,22 +12,22 @@ export default {
     },
     images: {
         0: {
-            imgUrl: '/src/assets/logos/vue.svg'
+            imgUrl: 'resume/src/assets/logos/vue.svg'
         },
         1: {
-            imgUrl: '/src/assets/logos/js.svg'
+            imgUrl: 'resume/src/assets/logos/js.svg'
         },
         2: {
-            imgUrl: '/src/assets/logos/tw.svg'
+            imgUrl: 'resume/src/assets/logos/tw.svg'
         },
         3: {
-            imgUrl: '/src/assets/logos/scss.svg'
+            imgUrl: 'resume/src/assets/logos/scss.svg'
         },
         4: {
-            imgUrl: '/src/assets/logos/html5.svg'
+            imgUrl: 'resume/src/assets/logos/html5.svg'
         },
         5: {
-            imgUrl: '/src/assets/logos/css3.svg'
+            imgUrl: 'resume/src/assets/logos/css3.svg'
         }
     }
 }

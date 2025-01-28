@@ -8,27 +8,27 @@ export default {
             0: {
                 title: 'Boba Ice Cream',
                 text: 'lorem ipsum',
-                videoUrl: '/src/assets/work-videos/boba-icecream.mp4'
+                videoUrl: 'resume/src/assets/work-videos/boba-icecream.mp4'
             },
             1: {
                 title: 'DesignDept',
                 text: 'lorem ipsum',
-                videoUrl: '/src/assets/work-videos/design-dept.mp4'
+                videoUrl: 'resume/src/assets/work-videos/design-dept.mp4'
             },
             2: {
                 title: 'Helloplayful',
                 text: 'lorem ipsum',
-                videoUrl: '/src/assets/work-videos/helloplayful.mp4'
+                videoUrl: 'resume/src/assets/work-videos/helloplayful.mp4'
             },
             3: {
                 title: 'WoodInt',
                 text: 'lorem ipsum',
-                videoUrl: '/src/assets/work-videos/wood.mp4'
+                videoUrl: 'resume/src/assets/work-videos/wood.mp4'
             },
             4: {
                 title: 'Shapes And Forms',
                 text: 'lorem ipsum',
-                videoUrl: '/src/assets/work-videos/shapes.mp4'
+                videoUrl: 'resume/src/assets/work-videos/shapes.mp4'
             }
         }
     }
