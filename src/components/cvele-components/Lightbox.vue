@@ -19,7 +19,7 @@ onMounted(() => {
     ref="el"
     tabindex="0"
     @keyup.esc="emit('close')"
-    class="lightbox fixed w-full h-full top-0 left-0 backdrop-blur flex items-center justify-center z-[101] transition-500"
+    class="lightbox fixed w-full h-full top-0 left-0 backdrop-blur-[24px] flex items-center justify-center z-[101] transition-500"
   >
     <plus
       @click="emit('close')"

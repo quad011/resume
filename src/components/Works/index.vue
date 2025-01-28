@@ -21,6 +21,7 @@ itemsArray.splice(1, 0, { type: "text", content: items.data.content });
         class="px-4 w-full sm:w-1/2 xl:w-1/3 mb-10 lg:mb-20 h-full flex flex-col"
       >
         <WorkBox
+          v-if="item.title"
           :title="item.title"
           :videoUrl="item.videoUrl"
           :projectUrl="item.projectUrl"

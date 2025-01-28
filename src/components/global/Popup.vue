@@ -53,18 +53,15 @@ onMounted(() => {
       <h3
         v-if="title"
         v-html="title"
-        class="text-80 font-bold hidden lg:block"
+        class="text-80 !font-bold hidden lg:block"
       />
-      <h4
-        v-html="`Tech Stach: ${techStack}`"
-        class="text-18 lg:text-24 font-bold"
-      ></h4>
+      <h4 v-html="`Tech Stach: ${techStack}`" class="text-18 lg:text-24"></h4>
       <div class="mt-3">
         <a
           target="_blank"
           :href="projectUrl"
-          class="font-bold text-18 lg:text-40 link reversed"
-          >Link</a
+          class="text-18 lg:text-24 link reversed"
+          >Website</a
         >
       </div>
     </div>
