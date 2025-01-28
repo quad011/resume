@@ -35,7 +35,7 @@ const props = defineProps({
 
       <div
         v-else
-        class="marquee-item flex items-center justify-between w-screen mx-5 lg:mx-20"
+        class="marquee-item flex items-center lg:justify-between w-screen mx-5 lg:mx-20"
         v-for="n in 2"
       >
         <img
@@ -43,7 +43,7 @@ const props = defineProps({
           :key="index"
           :src="item.imgUrl"
           :alt="item.alt || 'technology'"
-          class="w-auto h-[6vw] lg:h-[6vw] object-contain mx-5 lg:mx-0"
+          class="w-auto h-[12vw] lg:h-[6vw] object-contain lg:mx-0"
         />
       </div>
     </div>

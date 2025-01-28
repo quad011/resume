@@ -570,20 +570,20 @@ html {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .\!absolute {
   position: absolute !important;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .relative {
   position: relative;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
+.bottom-16 {
+  bottom: 4rem;
 }
 
 .left-0 {
@@ -602,8 +602,8 @@ html {
   right: 0px;
 }
 
-.right-5 {
-  right: 1.25rem;
+.right-3 {
+  right: 0.75rem;
 }
 
 .top-0 {
@@ -612,30 +612,6 @@ html {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-14 {
-  bottom: 3.5rem;
-}
-
-.right-3 {
-  right: 0.75rem;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
 }
 
 .z-10 {
@@ -758,10 +734,6 @@ html {
   margin-top: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -778,10 +750,6 @@ html {
   aspect-ratio: 2.14;
 }
 
-.aspect-\[2\.4\] {
-  aspect-ratio: 2.4;
-}
-
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
@@ -790,8 +758,12 @@ html {
   height: auto !important;
 }
 
-.h-14 {
-  height: 3.5rem;
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-\[12vw\] {
+  height: 12vw;
 }
 
 .h-\[48px\] {
@@ -802,20 +774,12 @@ html {
   height: 50vw;
 }
 
-.h-\[6vw\] {
-  height: 6vw;
-}
-
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .max-h-screen {
@@ -22692,59 +22656,8 @@ html {
      object-fit: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.p-16 {
-  padding: 4rem;
-}
-
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-20 {
-  padding: 5rem;
-}
-
-.p-14 {
-  padding: 3.5rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
 }
 
 .px-16 {
@@ -22752,45 +22665,36 @@ html {
   padding-right: 4rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.pl-16 {
-  padding-left: 4rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.\!pl-16 {
-  padding-left: 4rem !important;
-}
-
-.pl-4 {
-  padding-left: 1rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .\!pl-4 {
   padding-left: 1rem !important;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
+.pr-20 {
+  padding-right: 5rem;
 }
 
 .pr-7 {
   padding-right: 1.75rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
 }
 
 .text-left {
@@ -44062,18 +43966,6 @@ html {
   opacity: 1;
 }
 
-.opacity-10 {
-  opacity: 0.1;
-}
-
-.opacity-30 {
-  opacity: 0.3;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -44225,32 +44117,36 @@ html {
     margin-top: 0.75rem;
   }
 
-  .lg\:h-\[6vw\] {
-    height: 6vw;
-  }
-
   .lg\:h-14 {
     height: 3.5rem;
   }
 
-  .lg\:w-1\/3 {
-    width: 33.333333%;
-  }
-
-  .lg\:w-\[2\.5rem\] {
-    width: 2.5rem;
-  }
-
-  .lg\:w-14 {
-    width: 3.5rem;
+  .lg\:h-\[6vw\] {
+    height: 6vw;
   }
 
   .lg\:w-1\/2 {
     width: 50%;
   }
 
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-14 {
+    width: 3.5rem;
+  }
+
+  .lg\:w-\[2\.5rem\] {
+    width: 2.5rem;
+  }
+
   .lg\:items-end {
     align-items: flex-end;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:p-16 {
@@ -44277,14 +44173,14 @@ html {
     font-weight: 400;
   }
 
-  .lg\:text-40 {
-    font-size: clamp(20px, 2.22rem, 51px);
-    line-height: 1.1;
+  .lg\:text-32 {
+    font-size: clamp(28px, 1.777rem, 34px);
+    line-height: 1;
     font-weight: 400;
   }
 
-  .lg\:text-44 {
-    font-size: clamp(40px, 2.444rem, 55px);
+  .lg\:text-40 {
+    font-size: clamp(20px, 2.22rem, 51px);
     line-height: 1.1;
     font-weight: 400;
   }
@@ -44292,29 +44188,5 @@ html {
   .lg\:text-base {
     font-size: clamp(16px, 1rem, 22px);
     line-height: 1.2;
-  }
-
-  .lg\:text-12 {
-    font-size: clamp(10px, .66rem, 18px);
-    line-height: 1.25;
-    font-weight: 400;
-  }
-
-  .lg\:text-14 {
-    font-size: clamp(10px, .77rem, 20px);
-    line-height: 1.25;
-    font-weight: 400;
-  }
-
-  .lg\:text-16 {
-    font-size: clamp(16px, .888rem, 22px);
-    line-height: 1.25;
-    font-weight: 400;
-  }
-
-  .lg\:text-32 {
-    font-size: clamp(28px, 1.777rem, 34px);
-    line-height: 1;
-    font-weight: 400;
   }
 }
