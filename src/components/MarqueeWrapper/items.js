@@ -12,22 +12,22 @@ export default {
     },
     images: {
         0: {
-            imgUrl: 'resume/src/assets/logos/vue.svg'
+            imgUrl: new URL('/assets/logos/vue.svg', import.meta.url).href
         },
         1: {
-            imgUrl: 'resume/src/assets/logos/js.svg'
+            imgUrl: new URL('/assets/logos/js.svg', import.meta.url).href
         },
         2: {
-            imgUrl: 'resume/src/assets/logos/tw.svg'
+            imgUrl: new URL('/assets/logos/tw.svg', import.meta.url).href
         },
         3: {
-            imgUrl: 'resume/src/assets/logos/scss.svg'
+            imgUrl: new URL('/assets/logos/scss.svg', import.meta.url).href
         },
         4: {
-            imgUrl: 'resume/src/assets/logos/html5.svg'
+            imgUrl: new URL('/assets/logos/html5.svg', import.meta.url).href
         },
         5: {
-            imgUrl: 'resume/src/assets/logos/css3.svg'
+            imgUrl: new URL('/assets/logos/css3.svg', import.meta.url).href
         }
     }
 }

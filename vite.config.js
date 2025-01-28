@@ -7,6 +7,7 @@ import Components from 'unplugin-vue-components/vite';
 // https://vite.dev/config/
 export default defineConfig({
   base: "/resume/",
+  publicDir: './public',
   plugins: [
     vue(),
     Components({

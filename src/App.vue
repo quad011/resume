@@ -47,7 +47,7 @@ function scrollToTop() {
       <img
         alt="logo"
         class="logo w-[5vw] object-contain"
-        src="@/assets/svg/logo.svg"
+        src="/assets/svg/logo.svg"
       />
     </div>
     <!-- END :: LOGO -->
