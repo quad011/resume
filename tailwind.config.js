@@ -1,5 +1,17 @@
+import plugin from "tailwindcss/plugin"
+import typography from "@tailwindcss/typography"
+
 export default {
-  content: ["./src/**/*.{vue,html,js}"],
+  plugins: [
+		plugin(function ({ addBase }) {
+			addBase({
+				html: { fontSize: ".9375vw" }
+			})
+		}),
+		typography
+	],
+
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
    safelist: [
      "lg:items-end",
      {
@@ -11,9 +23,12 @@ export default {
      extend: {
        lineHeight: {},
        colors: {
-         black: "#000000",
+          black: "#141414",
+          white: "#F9F9F9",
+          purple: "#441752",
        },
        fontFamily: {
+        RedHatDisplay: ["RedHatDisplay"]
        },
  
        fontSize: {
@@ -214,28 +229,15 @@ export default {
          92: "23rem"
        },
  
-       // container: {
-       // 	// you can configure the container to be centered
-       // 	center: true,
- 
-       // 	// or have default horizontal padding
-       // 	padding: "0",
- 
-       // 	// default breakpoints but with 40px removed
-       // 	screens: {
-       // 		xs: "375px",
-       // 		sm: "600px",
-       // 		md: "728px",
-       // 		lg: "984px",
-       // 		xl: "1050px",
-       // 		"2xl": "1080px"
-       // 	}
-       // },
- 
        screens: {
          "max-sm": { min: "0px", max: "639px" },
          "max-lg": { min: "375px", max: "1023px" },
-         xxl: "1600px"
+          xs: "375px",
+       		sm: "600px",
+       		md: "768px",
+       		lg: "992px",
+       		xl: "1024px",
+       		"2xl": "1600px"
        }
      }
    }
