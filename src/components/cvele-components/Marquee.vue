@@ -35,7 +35,7 @@ const props = defineProps({
 
       <div
         v-else
-        class="marquee-item flex items-center lg:justify-between w-screen mx-5 lg:mx-20"
+        class="marquee-item flex items-center justify-between w-screen mx-2 lg:mx-20"
         v-for="n in 2"
       >
         <img
@@ -52,7 +52,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .marquee-content {
-  // animation: scrolling 10s linear infinite;
+  animation: scrolling 10s linear infinite;
   &-reversed {
     animation: scrolling-reversed 10s linear infinite;
   }
