@@ -12,17 +12,18 @@ const props = defineProps({
 <template>
   <div
     ref="header"
-    class="page-header h-[56vw] max-h-screen flex items-end relative overflow-hidden"
+    class="page-header h-[80vw] sm:h-[56vw] max-h-screen flex items-end relative overflow-hidden"
   >
-    <!-- <parallax> -->
-    <h1
-      v-html="title"
-      class="text-black text-[10.5vw] whitespace-nowrap font-bold uppercase relative left-[-.7vw] leading-[.9]"
-    ></h1>
-    <!-- </parallax> -->
-    <!-- <parallax :factor="0.5">
-      <Picture :absolute="true" :src="bgImage" />
-    </parallax> -->
+    <ScrollingElement
+      yPercent="-150"
+      startPosition="bottom bottom"
+      endPosition="top"
+    >
+      <h1
+        v-html="title"
+        class="text-black text-[10.5vw] whitespace-nowrap font-bold uppercase relative left-[-.7vw] leading-[.9]"
+      ></h1>
+    </ScrollingElement>
   </div>
 </template>
 

@@ -18,7 +18,7 @@ itemsArray.splice(1, 0, { type: "text", content: items.data.content });
       <div
         v-for="(item, index) in itemsArray"
         :key="index"
-        class="px-4 w-full sm:w-1/2 xl:w-1/3 mb-10 lg:mb-20 h-full flex flex-col"
+        class="px-4 w-full sm:w-1/2 xl:w-1/3 mb-10 lg:mb-20 flex flex-col"
       >
         <WorkBox
           v-if="item.title"
@@ -28,13 +28,10 @@ itemsArray.splice(1, 0, { type: "text", content: items.data.content });
           :techStack="item.techStack"
         />
 
-        <div
-          v-if="item.content"
-          class="h-full flex flex-col justify-between flex"
-        >
+        <div v-if="item.content" class="h-full flex flex-col">
           <h2
             v-html="item?.content?.title"
-            class="text-24 lg:text-32 uppercase mb-5 sm:mb-3 lg:mb-0"
+            class="text-24 lg:text-32 uppercase mb-5 sm:mb-3 lg:mb-5"
           />
           <p
             v-html="item?.content?.text"

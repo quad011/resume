@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ArrowTop: typeof import('./src/components/icons/ArrowTop.vue')['default']
+    BigText: typeof import('./src/components/BigText/index.vue')['default']
     FullscreenMenu: typeof import('./src/components/global/FullscreenMenu.vue')['default']
     Hamburger: typeof import('./src/components/global/Hamburger.vue')['default']
     HtmlVideo: typeof import('./src/components/cvele-components/html-video/index.vue')['default']
@@ -23,6 +24,7 @@ declare module 'vue' {
     Popup: typeof import('./src/components/global/Popup.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ScrollingElement: typeof import('./src/components/global/ScrollingElement.vue')['default']
     Spinner: typeof import('./src/components/cvele-components/Spinner.vue')['default']
     TextBox: typeof import('./src/components/global/TextBox.vue')['default']
     TransitionGsap: typeof import('./src/components/cvele-components/TransitionGsap.vue')['default']

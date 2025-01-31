@@ -38,7 +38,7 @@ const playing = ref(false);
       :controls="false"
       :muted="true"
       :loop="true"
-      class="h-full"
+      class="aspect-[1.9]"
     />
     <h3 v-if="title" v-html="title" class="text-18 lg:text-24 mt-2 lg:mt-3" />
   </div>

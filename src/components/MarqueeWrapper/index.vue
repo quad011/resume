@@ -23,7 +23,7 @@ const props = defineProps({
     <h2 v-html="title" class="text-32 lg:text-40 px-4 lg:px-16 mb-5 lg:mb-10" />
     <!-- MARQUEE -->
     <Marquee
-      :items="marqueeText ? items.headline : items.images"
+      :items="items.images"
       :marqueeText="marqueeText"
       :reversed="reversed"
     />

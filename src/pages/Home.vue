@@ -11,11 +11,11 @@ import PageHeader from "@/components/PageHeader.vue";
 
     <Works title="Projects" />
 
-    <MarqueeWrapper title="Technology" />
+    <BigText />
 
     <WorkExperience title="Work Experience" />
 
-    <MarqueeWrapper :marqueeText="true" :reversed="true" />
+    <MarqueeWrapper title="Skills" />
 
     <PageFooter />
   </main>
